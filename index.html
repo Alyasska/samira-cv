@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samira Mamlyutova — CV</title>
+<meta name="description" content="10th grader from Petropavlovsk. An English club I started, a debate cup I co-organised, five web prototypes since June 2026.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Samira Mamlyutova — CV">
+<meta property="og:description" content="Five prototypes. Four months. Next: the numbers.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fffdf8; --ink:#202422; --muted:#6b706c; --line:#deddd5;
+    --coral:#f27258; --pen:#d9553b; --lime:#d9ef75; --cream:#f5f2eb; --grid:#dce9f2;
+    --cell:24px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#ecebe4;color:var(--ink);font-family:'Onest',sans-serif;font-size:17px;line-height:1.5}
+  a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+
+  /* the notebook sheet */
+  .sheet{max-width:1080px;margin:28px auto;background-color:var(--paper);
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:var(--cell) var(--cell);
+    box-shadow:0 1px 0 #d8d6cc,0 18px 40px -24px rgba(32,36,34,.35);
+    position:relative;padding:40px 0 56px}
+  .sheet:after{content:"";position:absolute;top:0;bottom:0;right:264px;border-right:2px solid var(--coral);opacity:.75}
+  .row{display:grid;grid-template-columns:1fr 264px}
+  .main{padding:0 44px 0 56px}
+  .note{font-family:'Caveat',cursive;color:var(--pen);font-size:23px;line-height:1.1;padding:0 22px 0 26px;align-self:start}
+
+  /* top */
+  .top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;font-size:14px;padding-bottom:26px}
+  .top b{font-weight:800;letter-spacing:.02em}
+  .top nav{display:flex;gap:8px;flex-wrap:wrap}
+  .top nav a{text-decoration:none;border:1.5px solid var(--ink);background:var(--paper);padding:5px 12px;border-radius:99px;font-weight:600}
+  .top nav a:hover{background:var(--ink);color:var(--paper)}
+
+  .label{font-family:'Caveat',cursive;font-size:26px;color:var(--pen);margin:0;line-height:1}
+  h1{font-size:clamp(44px,6.6vw,86px);line-height:.98;letter-spacing:-.035em;font-weight:800;margin:6px 0 22px}
+  mark{background:linear-gradient(transparent 12%,var(--lime) 12%,var(--lime) 88%,transparent 88%);color:inherit;padding:0 .08em}
+  .intro{font-size:20px;max-width:640px;margin:0 0 22px}
+  .contacts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+  .btn{display:inline-block;font-weight:600;font-size:15px;text-decoration:none;padding:11px 18px;border:1.5px solid var(--ink);background:var(--paper)}
+  .btn.main{background:var(--ink);color:#fff;box-shadow:5px 5px 0 var(--coral)}
+  .btn.main:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--coral)}
+
+  .ribbon{display:block;width:100%;max-width:230px;height:auto;margin-top:6px}
+
+  .facts{margin:34px 0 0;font-size:18px;line-height:2.1;max-width:720px}
+  .facts mark{font-weight:600}
+
+  /* sections */
+  section{margin-top:64px}
+  h2{font-size:clamp(30px,3.6vw,42px);letter-spacing:-.025em;line-height:1.05;margin:4px 0 20px;font-weight:800}
+  .entry{padding:18px 0 20px;border-top:1.5px dashed #bfc6c9}
+  .row:first-child + .row .entry:first-child{border-top:0;padding-top:4px}
+  .entry .t{display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap}
+  h3{font-size:21px;margin:0;letter-spacing:-.01em;font-weight:800}
+  .when{font-size:14px;color:var(--muted);white-space:nowrap;font-weight:500}
+  .r{color:#c4452c;font-weight:600;font-size:15px;margin:2px 0 6px}
+  .entry p{margin:0}
+  .entry ul{margin:6px 0 0;padding-left:20px}
+  .entry li{margin:2px 0}
+
+  .url{display:inline-block;font-size:14px;font-weight:600;background:var(--lime);padding:2px 9px;text-decoration:none;border:1.5px solid var(--ink);border-radius:99px;margin-left:2px;vertical-align:2px;letter-spacing:0}
+  .url:hover{background:var(--ink);color:var(--lime)}
+  .tag{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border:1.5px dashed var(--muted);color:var(--muted);padding:1px 7px;border-radius:99px;vertical-align:1px;white-space:nowrap}
+  .dk{margin-top:10px;background:var(--cream);border-left:3px solid var(--coral);padding:9px 12px;font-size:15.5px}
+  .dk b{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#c4452c;display:block}
+
+  .why p{font-size:19px;max-width:660px;margin:0 0 14px}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+  .two .entry:first-child{border-top:0;padding-top:4px}
+  .langs{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .langs span{border:1.5px solid var(--ink);background:var(--paper);padding:5px 12px;border-radius:99px;font-size:15px}
+
+  .foot{margin-top:64px;padding-top:26px;border-top:2px solid var(--ink)}
+  .foot h2{margin-bottom:14px}
+  .small{font-size:13.5px;color:var(--muted);margin-top:16px}
+
+  @media (max-width:860px){
+    body{background:var(--paper)}
+    .sheet{margin:0;box-shadow:none;padding:22px 0 40px}
+    .sheet:after{right:auto;left:14px}
+    .row{grid-template-columns:1fr}
+    .main{padding:0 18px 0 30px}
+    .note{padding:6px 18px 0 30px;font-size:21px}
+    .note:empty{display:none}
+    .two{grid-template-columns:1fr}
+    .two > div + div .entry:first-child{border-top:1.5px dashed #bfc6c9;padding-top:18px}
+    .intro{font-size:18px}
+    .ribbon{max-width:160px}
+    .facts{line-height:1.9}
+  }
+  @media print{
+    @page{size:A4;margin:14mm 14mm}
+    body{background:#fff;font-size:10pt;line-height:1.35}
+    .sheet{background:#fff;box-shadow:none;margin:0;padding:0;max-width:none}
+    .sheet:after,.note,.top nav,.ribbon,.contacts .btn.main{display:none}
+    .row{grid-template-columns:1fr}
+    .main{padding:0}
+    h1{font-size:28pt;margin:0 0 8pt}
+    .intro{font-size:11pt}
+    .facts{font-size:10.5pt;line-height:1.6;margin-top:6pt}
+    section{margin-top:14pt}
+    h2{font-size:15pt;margin:0 0 4pt}
+    h3{font-size:11pt}
+    .entry{padding:5pt 0;break-inside:avoid}
+    .dk{display:none}
+    .why p{font-size:10.5pt}
+    .foot{display:none}
+    .btn{border:0;padding:0;font-weight:500}
+    .url{border:0;background:none;padding:0}
+    .label{font-size:14pt}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="row">
+    <div class="main">
+      <div class="top">
+        <b>SAMIRA MAMLYUTOVA</b>
+        <nav>
+          <a href="#run">Things I run</a>
+          <a href="#made">What I made</a>
+          <a href="#why">Why Zimran</a>
+        </nav>
+      </div>
+      <p class="label">10th grade · Petropavlovsk, Kazakhstan</p>
+      <h1>Five prototypes. Four months. <mark>Next: the numbers.</mark></h1>
+      <p class="intro">I'm Samira. I make small web products with AI tools, run an English club and co-organised a regional debate tournament. I've never measured if any of it really works. That's what I want to learn at Zimran IT School.</p>
+      <div class="contacts">
+        <a class="btn main" href="https://t.me/samirusham">Telegram @samirusham</a>
+        <a class="btn" href="mailto:samirusham@gmail.com">samirusham@gmail.com</a>
+        <a class="btn" href="https://github.com/samirusham-dotcom">GitHub</a>
+      </div>
+    </div>
+    <div class="note">
+      <svg class="ribbon" viewBox="0 0 230 120" fill="none" aria-hidden="true"><path d="M6 96c30-60 70-80 92-48 18 26-24 50-30 22-6-30 50-56 86-34 26 16 14 50 40 52 18 2 28-18 30-40" stroke="#f27258" stroke-width="4" stroke-linecap="round"/><path d="M6 96l-4 14" stroke="#202422" stroke-width="3" stroke-linecap="round"/></svg>
+      ↑ 7 years of rhythmic gymnastics — that's my ribbon
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="main">
+      <p class="facts">
+        Since April: <mark>4 groups</mark> in the English club I started ·
+        Sep 2026: co-organiser of a debate cup for <mark>30 teams</mark> ·
+        Since June: <mark>5 prototypes</mark> online ·
+        <mark>3 hackathons</mark> as team lead ·
+        <mark>Best Position Paper ×3</mark> at Model UN
+      </p>
+    </div>
+    <div class="note"></div>
+  </div>
+
+  <!-- THINGS I RUN -->
+  <section id="run">
+    <div class="row">
+      <div class="main">
+        <p class="label">Task 1</p>
+        <h2>Things I run (with real people)</h2>
+      </div>
+      <div class="note"></div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>English club tutorclub_mgzh</h3><span class="when">Apr 2026 – now</span></div>
+          <div class="r">Founder &amp; teacher</div>
+          <ul>
+            <li>Started it from zero: program, schedule, finding students.</li>
+            <li>4 groups (grades 4, 8, 9 and 10), twice a week.</li>
+            <li>I run the club's Instagram.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">twice a week since April</div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>Zhalyn Cup — regional debate tournament</h3><span class="when">26 Sep 2026</span></div>
+          <div class="r">Co-organiser</div>
+          <p>Organised together with SHYŃ, the Intellectual Debate Club of Kozybayev University. British Parliamentary format, Kazakh and Russian leagues, 30 teams registered.</p>
+        </div>
+      </div>
+      <div class="note">from debater (El Umiti) → to organiser</div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>Online clothing shop</h3></div>
+          <div class="r">Founder</div>
+          <ul>
+            <li>Posts and ads on Instagram.</li>
+            <li>Talked to customers and suppliers, kept a record of all orders.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note">→ one reason I'm applying (Task 3)</div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>SKO Hub — regional IT hub</h3><span class="when">Feb 2026 – now</span></div>
+          <div class="r">Volunteer / intern</div>
+          <p>Registration and help for guests at regional forums, including Digital North.</p>
+        </div>
+        <div class="entry">
+          <div class="t"><h3>Volunteering</h3><span class="when">38+ hours, certificates</span></div>
+          <div class="r">Volunteer</div>
+          <ul>
+            <li>American Corner Petropavlovsk — helped organise English-language events (20 hours).</li>
+            <li>Prepared and taught a beginner Chinese course (18+ hours).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note"></div>
+    </div>
+  </section>
+
+  <!-- WHAT I MADE -->
+  <section id="made">
+    <div class="row">
+      <div class="main">
+        <p class="label">Task 2</p>
+        <h2>What I made</h2>
+        <p style="margin:0 0 10px">All of these are online — click and try. Some are still prototypes, and I marked them.</p>
+      </div>
+      <div class="note"></div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>Dragon Shop AI <a class="url" href="https://dragonshop-ai.vercel.app">dragonshop-ai.vercel.app ↗</a></h3><span class="when">Sep 2026</span></div>
+          <div class="r">My own project · built with AI tools in bootcamp week <span class="tag">demo data</span></div>
+          <p>Search for a product, compare prices from Chinese marketplaces and see the final cost in tenge. It shows demo data for now.</p>
+          <div class="dk"><b>What I don't know yet</b>Would people really order after they see the price in tenge? I have no data yet.</div>
+        </div>
+      </div>
+      <div class="note">newest one</div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>IELTSync <a class="url" href="https://ieltssync.vercel.app">ieltssync.vercel.app ↗</a></h3><span class="when">Sep 2026</span></div>
+          <div class="r">My own project <span class="tag">prototype</span></div>
+          <p>IELTS preparation with AI: a study plan for your level and target score, practice tasks and feedback on writing and speaking.</p>
+          <div class="dk"><b>What I don't know yet</b>Do students come back after the first day? I never checked.</div>
+        </div>
+      </div>
+      <div class="note"></div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>Ai-Ustaz <a class="url" href="https://ai-ustaz.vercel.app">ai-ustaz.vercel.app ↗</a></h3><span class="when">Aug 2026</span></div>
+          <div class="r">Team lead · Future Minds hackathon · led the team, built the site, presented the product</div>
+          <p>AI helper for schools: a short test finds a student's level and builds a personal plan; “Class Pulse” shows the teacher who is falling behind.</p>
+          <div class="dk"><b>What I don't know yet</b>Would a real teacher open Class Pulse every week? We never tested it with one.</div>
+        </div>
+      </div>
+      <div class="note"></div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>Adilet <a class="url" href="https://adiletstart.vercel.app">adiletstart.vercel.app ↗</a></h3><span class="when">Jul 2026</span></div>
+          <div class="r">Team lead · TechVision 2026 hackathon · built the first version, wrote the Russian content, pitched to the jury</div>
+          <p>Anonymous AI assistant for women facing domestic violence: explains their rights under Kazakhstan law and gives step-by-step next actions. Russian and Kazakh.</p>
+          <div class="dk"><b>What I don't know yet</b>Does anyone get to the real next step, a call or a document? I can't see that now.</div>
+        </div>
+      </div>
+      <div class="note"></div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>ZhanUya <a class="url" href="https://samirusham-dotcom.github.io/ZhanUya/">samirusham-dotcom.github.io/ZhanUya ↗</a></h3><span class="when">Jun 2026</span></div>
+          <div class="r">Team lead · Iqanat hackathon</div>
+          <p>Child-safety app: one tap on SOS alerts parents and shows the way to the nearest safe place; kids send “I'm on the bus” without typing.</p>
+          <div class="dk"><b>What I don't know yet</b>Would families use it every day? We didn't test it with them.</div>
+        </div>
+      </div>
+      <div class="note">the first one ↑</div>
+    </div>
+
+    <div class="row">
+      <div class="main">
+        <div class="entry">
+          <div class="t"><h3>Kazakhstani Junior Water Prize</h3></div>
+          <div class="r">Participant · national contest for high-school water projects</div>
+          <p>Project “Greywater treatment and reuse technology”.</p>
+        </div>
+      </div>
+      <div class="note"></div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why" class="why">
+    <div class="row">
+      <div class="main">
+        <p class="label">Task 3</p>
+        <h2>Why Zimran IT School</h2>
+        <p>I can make a working prototype fast now: hackathons and the bootcamp taught me that. But I can't tell if anyone needs it. None of my five prototypes has real users yet. My clothing shop was the same: I posted, ran ads and guessed what works.</p>
+        <p>Zimran grows apps in 180+ countries. That is the part I want to learn: market research, analytics and growth, from people who do it every day. Then I want to test my own products properly.</p>
+        <p>I know the program is for people with work experience, and I'm in 10th grade. My experience is small (a shop, a club, five prototypes), but it's real.</p>
+      </div>
+      <div class="note">"Next: the numbers" — this is what I mean ↑</div>
+    </div>
+  </section>
+
+  <!-- DEBATE + LEARNING -->
+  <section id="more">
+    <div class="row">
+      <div class="main">
+        <p class="label">Task 4</p>
+        <h2>Debate, school &amp; the rest</h2>
+        <div class="two">
+          <div>
+            <div class="entry">
+              <div class="t"><h3>Model UN — ASPAN MUN, HASTMUN, ALTYNMUN</h3></div>
+              <div class="r">Delegate · Best Position Paper at all three</div>
+            </div>
+            <div class="entry">
+              <div class="t"><h3>El Umiti Cup</h3></div>
+              <div class="r">Finalist · national parliamentary debate tournament</div>
+            </div>
+            <div class="entry">
+              <div class="t"><h3>XXXV City English Olympiad</h3></div>
+              <div class="r">3rd place · Petropavlovsk</div>
+            </div>
+            <div class="entry">
+              <div class="t"><h3>Rhythmic gymnastics</h3><span class="when">7 years</span></div>
+              <div class="r">1st adult sports category</div>
+            </div>
+          </div>
+          <div>
+            <div class="entry">
+              <div class="t"><h3>IT School-Lyceum named after M. Zhumabayev</h3><span class="when">2026 – 2027</span></div>
+              <div class="r">Grade 10 · Petropavlovsk</div>
+            </div>
+            <div class="entry">
+              <div class="t"><h3>Vibe Coding bootcamp — SKO Hub × Raskrutov</h3><span class="when">23–25 Sep 2026</span></div>
+              <div class="r">Certificate</div>
+              <p>3 days of building websites, landing pages and digital services with AI tools. Trainer: Daniil Inzhevatov, CEO of Raskrutov.</p>
+            </div>
+            <div class="entry">
+              <div class="t"><h3>Languages</h3></div>
+              <div class="langs"><span>Kazakh — native</span><span>Russian — native</span><span>English — B2, Cambridge FCE</span><span>Chinese — HSK 4</span><span>Spanish — A2</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="note">3 conferences, 3 awards</div>
+    </div>
+  </section>
+
+  <div class="row">
+    <div class="main foot">
+      <h2>Let's talk.</h2>
+      <div class="contacts">
+        <a class="btn main" href="https://t.me/samirusham">Telegram @samirusham</a>
+        <a class="btn" href="mailto:samirusham@gmail.com">samirusham@gmail.com</a>
+      </div>
+      <p class="small">Made with AI tools, in the same style as my Dragon Shop AI. Updated September 2026.</p>
+    </div>
+    <div class="note"></div>
+  </div>
+
+</div>
+</body>
+</html>
